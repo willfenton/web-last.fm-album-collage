@@ -4,3 +4,5 @@ config.ini
 __pycache__
 *.sqlite3
 apikey.txt
+*.json
+venv

@@ -5,10 +5,9 @@ import json
 
 app = Flask(__name__, static_folder=os.path.join(os.getcwd(), 'static'))
 
-@app.route('/')
-@app.route('/index')
+@app.route('/music')
 def index():
     return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
