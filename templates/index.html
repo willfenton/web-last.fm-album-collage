@@ -54,7 +54,8 @@
                         <img class="modal-art no-padding no-margin" v-bind:src="modalAlbum.image_url">
                         <p><b>Album: </b>{{ modalAlbum.album_name }}</p>
                         <p><b>Artist: </b>{{ modalAlbum.artist_name }}</p>
-                        <p><b>Scrobbles: </b>{{ modalAlbum.num_scrobbles }}</p>
+                        <p><b>Top Track: </b>{{ modalAlbum.top_track }}</p>
+                        <p><b>Count: </b>{{ modalAlbum.num_scrobbles }}</p>
                         <p><b>First Listen: </b>{{ parseTimestamp(modalAlbum.min_timestamp) }}</p>
                         <p><b>Last Listen: </b>{{ parseTimestamp(modalAlbum.max_timestamp) }}</p>
                     </div>
