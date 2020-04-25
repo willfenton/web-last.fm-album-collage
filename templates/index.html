@@ -11,9 +11,12 @@
     <title>Top Albums</title>
 
     <!-- icons -->
-    <link rel="icon" type="image/png" sizes="96x96" href="https://willfenton.dev/music/static/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://willfenton.dev/music/static/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://willfenton.dev/music/static/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+        href="https://willfenton.dev/music/static/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://willfenton.dev/music/static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://willfenton.dev/music/static/favicon/favicon-16x16.png">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -65,11 +68,10 @@
 
         <!-- Albums -->
         <div class="albums">
-            <span v-for="album in albums" data-toggle="modal" data-target="#exampleModal"
-                v-on:click="setModalData(album)">
-                <img class="album-art no-padding no-margin" v-bind:src="album.image_url" data-toggle="tooltip"
-                    data-placement="top" data-offset="0, 10%"
-                    v-bind:title="`${album.artist_name} - ${album.album_name}`">
+            <span v-for="album in albums" data-toggle="modal" data-toggle="tooltip" data-placement="top"
+                data-offset="0, 10%" v-bind:title="`${album.artist_name} - ${album.album_name}`">
+                <img class="album-art no-padding no-margin" v-bind:src="album.image_url" data-toggle="modal"
+                    data-target="#exampleModal" v-on:click="setModalData(album)">
             </span>
         </div>
     </div>
