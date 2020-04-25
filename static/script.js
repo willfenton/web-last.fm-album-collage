@@ -15,7 +15,7 @@ var vm = new Vue({
                 this.albums = json.albums;
                 if (!window.mobilecheck()) {
                     $(function () {
-                        $('[data-toggle="tooltip"]').tooltip()
+                        $('[data-toggle="tooltip"]').tooltip({ boundary: 'window' })
                     })
                 }
             });
